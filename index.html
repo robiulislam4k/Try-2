@@ -8,7 +8,7 @@
        
        .nop{
     width: 100%;
-height: 3700px;
+height: 12000px;
  background-color: black;
    
        }
@@ -378,7 +378,11 @@ margin-right: 350px;
     align-items: center;
     margin-right: 100px;
  }
- @media screen add (max:width=576px) {
+ @media only screen and (max-width: 600px) {
+    .mmm{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
     
  }
 
