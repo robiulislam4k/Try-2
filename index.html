@@ -48,15 +48,25 @@ padding: 4px ;
 /* gap: 47px; */
 border-radius: 39px ;
 border: 1px solid rgba(255, 255, 255, 0.1);
-flex-wrap: wrap;
+flex-direction: row;
 
+}
+@media (max-width: 576px) {
+  .a {
+    flex-direction: column;
+  }
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    flex-wrap: wrap;
+    flex-direction: row;
+}
+@media (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+  }
 }
 a{
 padding: 30px;
@@ -151,7 +161,12 @@ text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+}
+@media (max-width: 576px) {
+  .b {
+    flex-direction: column;
+  }
 }
  /* .f{ */
 /*     
@@ -208,7 +223,12 @@ text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
+}
+@media (max-width: 576px) {
+  .no {
+    flex-direction: column;
+  }
 }
 .mah{
     width: 1060px;
@@ -220,6 +240,7 @@ opacity: 0px;
 background-color: 
 rgba(34, 34, 34, 0.137);
 margin: 0 auto;
+margin-top: 70px;
     
 }
 .soc{
@@ -239,7 +260,15 @@ opacity: 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: row;
 
+
+}
+@media (max-width: 576px) {
+  .kop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 /* .kop{
     display: flex;
@@ -373,12 +402,14 @@ margin-right: 350px;
 } */
  .mmm{
     display: grid;
-    justify-content: center;
+
     grid-template-columns: repeat(3,1fr);
-    align-items: center;
+
     margin-right: 100px;
+    justify-content: center;
+    align-items: center;
  }
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 576px) {
     .mmm{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
@@ -413,9 +444,14 @@ color: rgba(255, 255, 255, 1);
     justify-content: space-around;
 
 margin-top: 66px;
-flex-wrap: wrap;
+flex-direction: row;
 
 
+}
+@media (max-width: 576px) {
+  .foot {
+    flex-direction: column;
+  }
 }
 .foot{
     margin: 0 auto;
@@ -572,11 +608,21 @@ gap: 102px;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-flex-wrap: wrap;
+flex-direction: row;
 background-color: rgba(34, 34, 34, 1);
 margin: 0 auto;
+margin-top: 80px;
 
 
+}
+.ten{
+    margin-top: 70px;
+}
+@media (max-width: 576px) {
+  .note {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 table,th,td{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -849,7 +895,7 @@ color: rgba(255, 255, 255, 0.65);
                             </div>
                         
 
-                                <div>
+                                <div class="ten">
                                     <h1>BMI Calculator</h1>
                                     <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
                             
